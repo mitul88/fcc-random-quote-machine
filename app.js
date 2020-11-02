@@ -16,8 +16,8 @@ $(document).ready(function(){
     let randomQuote = quoteBank[randomNum].quote;
     let randomAuthor = quoteBank[randomNum].author;
 
-        $(".quote").text(randomQuote);
-        $(".author").text("-" + randomAuthor);
+        $("#quote").text(randomQuote);
+        $("#author").text("-" + randomAuthor);
     }
 
     function colorFlip() {
@@ -36,9 +36,15 @@ $(document).ready(function(){
         getQuote();
         colorFlip();
     })
+    $('#tweet-quote').on('click',function(){
+        let tweetQuote = document.getElementById("quote").innerText;
+        let tweetAuthor = document.getElementById("author").innerText;
+        let tweetLink = document.getElementById('tweet-quote');
+        tweetLink.href= "https://twitter.com/intent/tweet?url="+ tweetQuote +" "+ tweetAuthor +"&hashtags=neverGiveUp";
+    })
 
-    let tweetQuote = document.getElementById("quote").innerHTML
-    let tweetAuthor = document.getElementById("author").innerHTML
-    let tweetLink = document.getElementById('tweet-quote');
-    tweetLink.href= "https://twitter.com/intent/tweet?url="+ tweetQuote +" "+ tweetAuthor +"&hashtags=neverGiveUp";
+    // let tweetQuote = document.getElementById("quote").innerHTML
+    // let tweetAuthor = document.getElementById("author").innerHTML
+    // let tweetLink = document.getElementById('tweet-quote');
+    // tweetLink.href= "https://twitter.com/intent/tweet?url="+ tweetQuote +" "+ tweetAuthor +"&hashtags=neverGiveUp";
 })
