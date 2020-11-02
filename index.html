@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <title>Random Quote Generator</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+<body>
+    <div id="quote-box" class="main-content">
+        <h1>Random Quote Generator</h1>
+        <div class="quotes"  id="text">
+        <i class="fas fa-quote-left fa-2x"></i>
+           <p class="quote">
+            <span id="quote">How wonderful it is that nobody need wait a single moment before starting to improve the world.</span>
+           </p> 
+            <em> <span id="author" class="author">-Anne Frank</span></em>
+        </div>
+         <a id="tweet-quote" target="_blank" class="tweet btn btn-block btn-primary" type='submit'><i class="fab fa-twitter"></i>  Tweet it</a>
+         <br>
+         <button id="new-quote" class="btn btn-block btn-success" type='submit'>New Quote</button>  
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
